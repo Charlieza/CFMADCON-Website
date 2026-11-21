@@ -7,7 +7,8 @@
 <meta name="description" content="CFMADCON is a financial, scientific and technology advisory firm in Cape Town, with practices in Finance & Tax, Data & Impact, and Space & Earth Observation.">
 <meta property="og:title" content="CFMADCON | Financial, scientific and technology advisory">
 <meta property="og:description" content="CFMADCON is a financial, scientific and technology advisory firm in Cape Town, with practices in Finance & Tax, Data & Impact, and Space & Earth Observation.">
-<meta property="og:image" content="assets/earth-africa.webp">
+<meta property="og:image" content="https://cfmadcon.com/assets/earth-africa.webp">
+<meta name="theme-color" content="#160F2B">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
@@ -17,6 +18,10 @@ a{color:#E8679E}a:hover{color:#FFFFFF}
 summary{list-style:none;cursor:pointer}
 summary::-webkit-details-marker{display:none}
 details[open] .faq-plus{transform:rotate(45deg)}
+.nav-mobile{display:none}
+.nav-mobile summary{list-style:none}
+.nav-mobile[open] .nav-mobile-icon{transform:rotate(45deg)}
+@media (max-width: 880px){.nav-desktop{display:none !important}.nav-mobile{display:block}}
 </style>
 </head>
 <body>
@@ -32,12 +37,12 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </defs></svg>
 
 <header style="position: relative; z-index: 2; border-bottom: 1px solid rgba(255,255,255,0.08); background: #160F2B">
-<div style="max-width: 1240px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 16px clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
 <a href="./" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF" aria-label="CFMADCON home">
 <img src="assets/cfmadcon-mark.png" alt="" style="width: 46px; height: 46px; display: block">
 <span style="font-family: Geist, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.16em">CFMADCON</span>
 </a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; font-size: 15px; font-weight: 500">
+<nav aria-label="Main" class="nav-desktop" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; font-size: 15px; font-weight: 500">
 <a href="practices.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Practices</a>
 <a href="eaglenatureinsight.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">EagleNatureInsight™</a>
 <a href="our-story.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Our story</a>
@@ -45,14 +50,26 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <a href="contact.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Contact</a>
 <a href="contact.html" style="background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 999px; font-weight: 600">Request a consultation</a>
 </nav>
+<details class="nav-mobile">
+<summary aria-label="Open menu" style="cursor: pointer; display: flex; align-items: center; gap: 8px; color: #FFFFFF; font-weight: 600; font-size: 15px; padding: 10px 16px; border: 1px solid rgba(255,255,255,0.3); border-radius: 999px">Menu <span class="nav-mobile-icon" aria-hidden="true" style="display: inline-block; transition: transform 0.2s; font-size: 18px; line-height: 1">+</span></summary>
+<nav aria-label="Mobile" style="position: absolute; left: 0; right: 0; top: 100%; background: #160F2B; border-bottom: 1px solid rgba(255,255,255,0.12); padding: 8px clamp(20px, 5vw, 32px) 24px; display: flex; flex-direction: column">
+<a href="./" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">Home</a>
+<a href="practices.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">Practices</a>
+<a href="eaglenatureinsight.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">EagleNatureInsight™</a>
+<a href="our-story.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">Our story</a>
+<a href="faq.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">FAQ</a>
+<a href="contact.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 18px; font-weight: 500">Contact</a>
+<a href="contact.html" style="margin-top: 18px; background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 14px 20px; border-radius: 999px; font-weight: 600; text-align: center">Request a consultation</a>
+</nav>
+</details>
 </div>
 </header>
 
 <section id="top" style="position: relative; overflow: hidden; background-color: #160F2B; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 64px 64px">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(60px, 11vw, 96px) clamp(20px, 5vw, 32px) clamp(56px, 11vw, 88px); display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
 <div style="flex: 999 1 560px; min-width: 0">
 <p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 28px; color: #8A94C6">33.92°S 18.42°E · Cape Town · Est. 2022</p>
-<h1 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 64px; line-height: 1.04; letter-spacing: -0.04em; color: #FFFFFF; font-size: 68px; max-width: 760px">Trusted expertise across finance, science and <span style="color: #E8679E">technology.</span></h1>
+<h1 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(34px, 8.5vw, 64px); line-height: 1.04; letter-spacing: -0.04em; overflow-wrap: break-word; color: #FFFFFF; font-size: clamp(38px, 10vw, 68px); max-width: 760px">Trusted expertise across finance, science and <span style="color: #E8679E">technology.</span></h1>
 <p style="margin: 28px 0 0; font-size: 20px; line-height: 1.55; color: #CFC6E3; max-width: 620px">CFMADCON is a financial, scientific and technology advisory firm. Our multidisciplinary model brings financial, data and Earth observation expertise together to help organisations meet the requirements of regulators, funders and investors.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px">
 <a href="contact.html" style="background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Request a consultation</a>
@@ -78,7 +95,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 <div role="img" aria-label="CFMADCON pattern: Venda-inspired cloth stripes, plait and dotted binding woven together with a Swati-inspired band of zigzags, ovals and a key border, joined by berry lines" style="line-height: 0; background: #160F2B"><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-night)"></rect></svg><svg width="100%" height="26" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="2.00" fill="#160F2B"></rect><rect x="0" y="2.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="3.00" width="100%" height="3.00" fill="#F2B233"></rect><rect x="0" y="6.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="7.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="9.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="10.00" width="100%" height="3.00" fill="#A91B60"></rect><rect x="0" y="13.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="14.00" width="100%" height="2.00" fill="#4C5270"></rect><rect x="0" y="16.00" width="100%" height="2.00" fill="#F2B233"></rect><rect x="0" y="18.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="19.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="21.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="22.00" width="100%" height="2.00" fill="#E8679E"></rect><rect x="0" y="24.00" width="100%" height="2.00" fill="#160F2B"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="22" style="display: block" aria-hidden="true"><rect width="100%" height="2" fill="#160F2B"></rect><rect y="2" width="100%" height="18" fill="url(#cfm-lattice)"></rect><rect y="20" width="100%" height="2" fill="#160F2B"></rect></svg><svg width="100%" height="10" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect width="100%" height="1.2" fill="#160F2B"></rect><rect y="8.8" width="100%" height="1.2" fill="#160F2B"></rect></svg><svg width="100%" height="16" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ovals)"></rect></svg><svg width="100%" height="40" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-zigzag)"></rect></svg><svg width="100%" height="16" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ovals)"></rect></svg><svg width="100%" height="10" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect width="100%" height="1.2" fill="#160F2B"></rect><rect y="8.8" width="100%" height="1.2" fill="#160F2B"></rect></svg><svg width="100%" height="18" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-meander)"></rect><rect width="100%" height="1.6" fill="#F6F3FA"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="26" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="2.00" fill="#160F2B"></rect><rect x="0" y="2.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="3.00" width="100%" height="3.00" fill="#F2B233"></rect><rect x="0" y="6.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="7.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="9.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="10.00" width="100%" height="3.00" fill="#A91B60"></rect><rect x="0" y="13.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="14.00" width="100%" height="2.00" fill="#4C5270"></rect><rect x="0" y="16.00" width="100%" height="2.00" fill="#F2B233"></rect><rect x="0" y="18.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="19.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="21.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="22.00" width="100%" height="2.00" fill="#E8679E"></rect><rect x="0" y="24.00" width="100%" height="2.00" fill="#160F2B"></rect></svg><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-gold)"></rect></svg></div>
 <section aria-label="At a glance" style="background: #1C1436; border-bottom: 1px solid rgba(255,255,255,0.08)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 40px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 40px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 40px clamp(20px, 5vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 24px 40px">
 <div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Founded</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">2022, Cape Town</p></div>
 <div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Structure</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Three specialist practices</p></div>
 <div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Finance &amp; Tax lead</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Master Tax Practitioner (SA)</p></div>
@@ -87,15 +104,15 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section aria-labelledby="practices-h" style="background-color: #160F2B; background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px); background-size: 24px 24px">
-<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 11vw, 104px) clamp(20px, 5vw, 32px)">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 48px; margin-bottom: 48px">
 <div style="flex: 1 1 480px; min-width: 0">
 <p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Our practices</p>
-<h2 id="practices-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF">Three practices. One standard of quality.</h2>
+<h2 id="practices-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(30px, 7vw, 44px); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; color: #FFFFFF">Three practices. One standard of quality.</h2>
 </div>
 <p style="flex: 1 1 380px; min-width: 0; margin: 0; color: #CFC6E3">Every engagement, whether a set of accounts, an impact report or a satellite assessment, is delivered to the same standard of rigour and evidence.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 20px">
 <article style="background: #22193F; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Geist Mono', monospace; font-size: 14px; color: #F2B233">01</span><span aria-hidden="true" style="width: 44px; height: 6px; border-radius: 3px; background: #F2B233"></span></div>
 <h3 style="margin: 0; font-family: Geist, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF">Finance &amp; Tax</h3>
@@ -137,10 +154,10 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section id="eni" style="background: #181B2E; position: relative; overflow: hidden">
-<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 11vw, 104px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
 <div style="flex: 999 1 520px; min-width: 0">
 <p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">A CFMADCON solution</p>
-<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF; font-size: 50px">EagleNatureInsight™</h2>
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(30px, 7vw, 44px); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; color: #FFFFFF; font-size: clamp(34px, 8vw, 50px)">EagleNatureInsight™</h2>
 <p style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.01em; color: #B8C0E6">Nature intelligence for business.</p>
 <p style="margin: 24px 0 0; font-size: 18px; color: #CDD1E6; max-width: 600px">Financiers, buyers and investors increasingly expect companies to understand their dependencies and impacts on nature. EagleNatureInsight uses satellite data to assess each of your sites and produce a prioritised action plan aligned with the TNFD LEAP approach. It is designed for small and medium-sized enterprises.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 36px">
@@ -161,14 +178,14 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section id="story" style="background: #F6F3FA; color: #2C1E4A">
-<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 11vw, 104px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
 <div style="flex: 1 1 460px; min-width: 0">
 <p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #A91B60">Our story</p>
-<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #160F2B">Founded where finance meets science.</h2>
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(30px, 7vw, 44px); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; color: #160F2B">Founded where finance meets science.</h2>
 <p style="margin: 24px 0 0; font-size: 18px; color: #4A3F66">CFMADCON was founded by a tax specialist and an astrophysicist. One brought the structure and rigour of financial practice; the other, the systems thinking and data skills of science. That combination still defines how we work.</p>
 <a href="our-story.html" style="display: inline-block; margin-top: 28px; background: #2C1E4A; color: #FFFFFF; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Read our story</a>
 </div>
-<div style="flex: 1 1 400px; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+<div style="flex: 1 1 400px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 16px">
 <div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">2022</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">Founded in Cape Town</p></div>
 <div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">2026</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">EagleNatureInsight™ wins a global challenge, through Space Eagle</p></div>
 <div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">Today</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">Three practices, one standard</p></div>
@@ -177,9 +194,9 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section aria-labelledby="q-h" style="background: #160F2B">
-<div style="max-width: 1000px; margin: 0 auto; padding: 104px 32px">
+<div style="max-width: 1000px; margin: 0 auto; padding: clamp(64px, 11vw, 104px) clamp(20px, 5vw, 32px)">
 <p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Common questions</p>
-<h2 id="q-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF; margin-bottom: 32px">What clients ask us first</h2>
+<h2 id="q-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(30px, 7vw, 44px); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; color: #FFFFFF; margin-bottom: 32px">What clients ask us first</h2>
 <div style="border-top: 1px solid rgba(255,255,255,0.12)">
 <details style="border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 0"><summary style="display: flex; justify-content: space-between; gap: 24px; font-family: Geist, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">What is EagleNatureInsight™?<span class="faq-plus" aria-hidden="true" style="color: #E8679E; transition: transform 0.2s">+</span></summary><p style="margin: 12px 0 0; color: #CFC6E3">A CFMADCON platform that uses satellite and environmental data to assess how each of a company's sites depends on and affects nature. Each assessment produces a plain-language profile and a prioritised action plan aligned with the TNFD LEAP approach.</p></details>
 <details style="border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 0"><summary style="display: flex; justify-content: space-between; gap: 24px; font-family: Geist, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Do you work on space projects beyond Earth observation?<span class="faq-plus" aria-hidden="true" style="color: #E8679E; transition: transform 0.2s">+</span></summary><p style="margin: 12px 0 0; color: #CFC6E3">Yes. Our space-sector advisory covers programme design, funding strategy and monitoring and evaluation for space programmes.</p></details>
@@ -190,9 +207,9 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section aria-label="Contact us" style="background-color: #160F2B; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 64px 64px; border-top: 1px solid rgba(255,255,255,0.08)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 88px 32px; display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center; justify-content: space-between">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(56px, 11vw, 88px) clamp(20px, 5vw, 32px); display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center; justify-content: space-between">
 <div style="flex: 1 1 520px; min-width: 0">
-<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF">Speak to our team.</h2>
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: clamp(30px, 7vw, 44px); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; color: #FFFFFF">Speak to our team.</h2>
 <p style="margin: 16px 0 0; color: #CFC6E3; max-width: 560px">To discuss an engagement or request a proposal, contact us.</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
@@ -204,7 +221,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
 
 <footer style="background: #100A21; color: #9C90BA; font-size: 15px">
 <div aria-hidden="true" style="line-height: 0; background: #160F2B"><svg width="100%" height="6" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-night)"></rect></svg><svg width="100%" height="16.12" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="1.24" fill="#160F2B"></rect><rect x="0" y="1.24" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="1.86" width="100%" height="1.86" fill="#F2B233"></rect><rect x="0" y="3.72" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="4.34" width="100%" height="1.24" fill="#8A94C6"></rect><rect x="0" y="5.58" width="100%" height="0.62" fill="#160F2B"></rect><rect x="0" y="6.20" width="100%" height="1.86" fill="#A91B60"></rect><rect x="0" y="8.06" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="8.68" width="100%" height="1.24" fill="#4C5270"></rect><rect x="0" y="9.92" width="100%" height="1.24" fill="#F2B233"></rect><rect x="0" y="11.16" width="100%" height="0.62" fill="#160F2B"></rect><rect x="0" y="11.78" width="100%" height="1.24" fill="#8A94C6"></rect><rect x="0" y="13.02" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="13.64" width="100%" height="1.24" fill="#E8679E"></rect><rect x="0" y="14.88" width="100%" height="1.24" fill="#160F2B"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect y="7" width="100%" height="1" fill="#160F2B"></rect></svg></div>
-<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px 40px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px clamp(20px, 5vw, 32px) 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 32px 40px">
 <div style="display: flex; flex-direction: column; gap: 14px">
 <a href="./" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF" aria-label="CFMADCON home"><img src="assets/cfmadcon-mark.png" alt="" style="width: 40px; height: 40px; display: block"><span style="font-weight: 600; font-size: 18px; letter-spacing: 0.16em">CFMADCON</span></a>
 <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #E8679E">FINANCIAL · SCIENTIFIC · TECHNOLOGY ADVISORY</p>
@@ -233,7 +250,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <a href="https://www.facebook.com/people/CFM-Advisory-and-Consulting/100091749138036/" style="color: #CFC6E3; text-decoration: none">Facebook</a>
 </nav>
 </div>
-<div style="max-width: 1240px; margin: 0 auto; padding: 20px 32px 36px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px; font-size: 13px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 32px) 36px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px; font-size: 13px">
 <p style="margin: 0">© 2026 CFMADCON (Pty) Ltd, Reg. 2022/310430/07. EagleNatureInsight™ is a CFMADCON solution, delivered with Space Eagle.</p>
 <p style="margin: 0">Imagery: NASA Blue Marble. Contains modified Copernicus Sentinel data, processed by Sentinel Hub.</p>
 </div>
