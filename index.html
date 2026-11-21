@@ -1,77 +1,244 @@
----
-title: Home
-description: The latest app to help you find new friends with common interests.
-image: https://unsplash.it/2000/1322?a=.png
-bottom_image: https://unsplash.it/2000/1322?a=.png
----
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFMADCON | Financial, scientific and technology advisory</title>
+<meta name="description" content="CFMADCON is a financial, scientific and technology advisory firm in Cape Town, with practices in Finance & Tax, Data & Impact, and Space & Earth Observation.">
+<meta property="og:title" content="CFMADCON | Financial, scientific and technology advisory">
+<meta property="og:description" content="CFMADCON is a financial, scientific and technology advisory firm in Cape Town, with practices in Finance & Tax, Data & Impact, and Space & Earth Observation.">
+<meta property="og:image" content="assets/earth-africa.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#160F2B}
+a{color:#E8679E}a:hover{color:#FFFFFF}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+</style>
+</head>
+<body>
+<div style="font-family: Geist, system-ui, sans-serif; color: #E9E4F3; background: #160F2B; font-size: 17px; line-height: 1.6">
+<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false"><defs>
+<pattern id="cfm-dots-night" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#160F2B"></rect><circle cx="5" cy="5" r="1.7" fill="#F6F3FA"></circle></pattern>
+<pattern id="cfm-dots-gold" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#F2B233"></rect><circle cx="5" cy="5" r="1.7" fill="#F6F3FA"></circle></pattern>
+<pattern id="cfm-lattice" width="18" height="18" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#2C1E4A"></rect><path d="M-2 -2L20 20M20 -2L-2 20" stroke="#F6F3FA" stroke-width="3.2"></path><path d="M-2 7L7 -2M11 20L20 11M-2 11L7 20M11 -2L20 7" stroke="#F6F3FA" stroke-width="1.2" opacity="0.55"></path></pattern>
+<pattern id="cfm-meander" width="20" height="18" patternUnits="userSpaceOnUse"><rect width="20" height="18" fill="#160F2B"></rect><path d="M0 15H15V4H5V11H11V8" fill="none" stroke="#F6F3FA" stroke-width="1.8"></path><path d="M15 15H20" stroke="#F6F3FA" stroke-width="1.8"></path></pattern>
+<pattern id="cfm-ladder" width="6" height="10" patternUnits="userSpaceOnUse"><rect width="6" height="10" fill="#F2B233"></rect><rect x="0" y="0" width="1.6" height="10" fill="#160F2B"></rect></pattern>
+<pattern id="cfm-zigzag" width="24" height="40" patternUnits="userSpaceOnUse"><rect width="24" height="40" fill="#4C5270"></rect><path d="M0 28L12 12L24 28" fill="none" stroke="#F6F3FA" stroke-width="2.2"></path><path d="M0 34L12 18L24 34" fill="none" stroke="#160F2B" stroke-width="1.2"></path><circle cx="12" cy="31" r="1.8" fill="#F2B233"></circle><circle cx="0" cy="9" r="1.8" fill="#F2B233"></circle><circle cx="24" cy="9" r="1.8" fill="#F2B233"></circle></pattern>
+<pattern id="cfm-ovals" width="14" height="16" patternUnits="userSpaceOnUse"><rect width="14" height="16" fill="#160F2B"></rect><path d="M7 2C10 5 10 11 7 14C4 11 4 5 7 2Z" fill="#8A94C6"></path></pattern>
+</defs></svg>
 
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
-	<div class="inner-hero text-container">
-		<div class="hero-text-container">
-			<h1 class="editable">CFM Advisory & Consulting</h1>
-			<p class="subtext editable">Where Tax Meets Technology. Where Data Drives Development.</p>
-			<div class="cta button alt"><a href="#">Join Now</a></div>
-		</div>
-	</div>
-	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+<header style="position: relative; z-index: 2; border-bottom: 1px solid rgba(255,255,255,0.08); background: #160F2B">
+<div style="max-width: 1240px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="./" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF" aria-label="CFMADCON home">
+<img src="assets/cfmadcon-mark.png" alt="" style="width: 46px; height: 46px; display: block">
+<span style="font-family: Geist, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.16em">CFMADCON</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; font-size: 15px; font-weight: 500">
+<a href="practices.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Practices</a>
+<a href="eaglenatureinsight.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">EagleNatureInsight™</a>
+<a href="our-story.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Our story</a>
+<a href="faq.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">FAQ</a>
+<a href="contact.html" style="color: #CFC6E3; text-decoration: none; padding: 10px 0">Contact</a>
+<a href="contact.html" style="background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 999px; font-weight: 600">Request a consultation</a>
+</nav>
+</div>
+</header>
+
+<section id="top" style="position: relative; overflow: hidden; background-color: #160F2B; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 64px 64px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 999 1 560px; min-width: 0">
+<p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 28px; color: #8A94C6">33.92°S 18.42°E · Cape Town · Est. 2022</p>
+<h1 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 64px; line-height: 1.04; letter-spacing: -0.04em; color: #FFFFFF; font-size: 68px; max-width: 760px">Trusted expertise across finance, science and <span style="color: #E8679E">technology.</span></h1>
+<p style="margin: 28px 0 0; font-size: 20px; line-height: 1.55; color: #CFC6E3; max-width: 620px">CFMADCON is a financial, scientific and technology advisory firm. Our multidisciplinary model brings financial, data and Earth observation expertise together to help organisations meet the requirements of regulators, funders and investors.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px">
+<a href="contact.html" style="background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Request a consultation</a>
+<a href="practices.html" style="color: #FFFFFF; text-decoration: none; padding: 14px 25px; border-radius: 999px; font-weight: 600; font-size: 16px; border: 1px solid rgba(255,255,255,0.35)">Explore our practices</a>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
+<figure style="margin: 0; position: relative; width: 100%; max-width: 520px; aspect-ratio: 520 / 440">
+<svg viewBox="-60 -20 520 440" style="position: absolute; inset: 0; width: 100%; height: 100%" aria-hidden="true"><ellipse cx="200" cy="200" rx="196" ry="70" transform="rotate(-20 200 200)" fill="none" stroke="#8A94C6" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6"></ellipse></svg>
+<img src="assets/earth-africa.webp" alt="Earth from space, centred on Africa. NASA Blue Marble imagery." style="position: absolute; left: 17.03%; top: 11.04%; width: 65.93%; height: 77.92%; object-fit: contain; display: block">
+<svg viewBox="-60 -20 520 440" style="position: absolute; inset: 0; width: 100%; height: 100%" role="img" aria-label="Three practices in orbit: Finance and Tax, Data and Impact, Space and Earth Observation">
+<path d="M4 200 A196 70 0 0 0 396 200" transform="rotate(-20 200 200)" fill="none" stroke="#8A94C6" stroke-width="2.5" stroke-dasharray="6 6"></path>
+<circle cx="19.6" cy="240.2" r="9" fill="#F2B233"></circle>
+<circle cx="346.7" cy="109.3" r="9" fill="#8A94C6"></circle>
+<circle cx="255.4" cy="253.2" r="9" fill="#A91B60" stroke="#FFFFFF" stroke-width="2"></circle>
+<text x="19.6" y="275" text-anchor="middle" font-family="Geist, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" stroke="#160F2B" stroke-width="6" paint-order="stroke">Finance &amp; Tax</text>
+<text x="346.7" y="84" text-anchor="middle" font-family="Geist, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" stroke="#160F2B" stroke-width="6" paint-order="stroke">Space &amp; EO</text>
+<text x="300" y="292" text-anchor="middle" font-family="Geist, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" stroke="#160F2B" stroke-width="6" paint-order="stroke">Data &amp; Impact</text>
+</svg>
+</figure>
+</div>
+</div>
+</section>
+<div role="img" aria-label="CFMADCON pattern: Venda-inspired cloth stripes, plait and dotted binding woven together with a Swati-inspired band of zigzags, ovals and a key border, joined by berry lines" style="line-height: 0; background: #160F2B"><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-night)"></rect></svg><svg width="100%" height="26" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="2.00" fill="#160F2B"></rect><rect x="0" y="2.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="3.00" width="100%" height="3.00" fill="#F2B233"></rect><rect x="0" y="6.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="7.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="9.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="10.00" width="100%" height="3.00" fill="#A91B60"></rect><rect x="0" y="13.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="14.00" width="100%" height="2.00" fill="#4C5270"></rect><rect x="0" y="16.00" width="100%" height="2.00" fill="#F2B233"></rect><rect x="0" y="18.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="19.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="21.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="22.00" width="100%" height="2.00" fill="#E8679E"></rect><rect x="0" y="24.00" width="100%" height="2.00" fill="#160F2B"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="22" style="display: block" aria-hidden="true"><rect width="100%" height="2" fill="#160F2B"></rect><rect y="2" width="100%" height="18" fill="url(#cfm-lattice)"></rect><rect y="20" width="100%" height="2" fill="#160F2B"></rect></svg><svg width="100%" height="10" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect width="100%" height="1.2" fill="#160F2B"></rect><rect y="8.8" width="100%" height="1.2" fill="#160F2B"></rect></svg><svg width="100%" height="16" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ovals)"></rect></svg><svg width="100%" height="40" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-zigzag)"></rect></svg><svg width="100%" height="16" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ovals)"></rect></svg><svg width="100%" height="10" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect width="100%" height="1.2" fill="#160F2B"></rect><rect y="8.8" width="100%" height="1.2" fill="#160F2B"></rect></svg><svg width="100%" height="18" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-meander)"></rect><rect width="100%" height="1.6" fill="#F6F3FA"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="26" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="2.00" fill="#160F2B"></rect><rect x="0" y="2.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="3.00" width="100%" height="3.00" fill="#F2B233"></rect><rect x="0" y="6.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="7.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="9.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="10.00" width="100%" height="3.00" fill="#A91B60"></rect><rect x="0" y="13.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="14.00" width="100%" height="2.00" fill="#4C5270"></rect><rect x="0" y="16.00" width="100%" height="2.00" fill="#F2B233"></rect><rect x="0" y="18.00" width="100%" height="1.00" fill="#160F2B"></rect><rect x="0" y="19.00" width="100%" height="2.00" fill="#8A94C6"></rect><rect x="0" y="21.00" width="100%" height="1.00" fill="#F6F3FA"></rect><rect x="0" y="22.00" width="100%" height="2.00" fill="#E8679E"></rect><rect x="0" y="24.00" width="100%" height="2.00" fill="#160F2B"></rect></svg><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-gold)"></rect></svg></div>
+<section aria-label="At a glance" style="background: #1C1436; border-bottom: 1px solid rgba(255,255,255,0.08)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 40px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 40px">
+<div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Founded</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">2022, Cape Town</p></div>
+<div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Structure</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Three specialist practices</p></div>
+<div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Finance &amp; Tax lead</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Master Tax Practitioner (SA)</p></div>
+<div><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Recognition</p><p style="margin: 6px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">EagleNatureInsight™: 2026 Grand Challenge winner</p></div>
+</div>
 </section>
 
-<div class="content">
-	<section class="info" id="learn-more">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Who We Are</h2>
-				<p class="editable">CFM Advisory and Consulting is built at the crossroads of regulatory insight, data innovation, and public value. We partner with individuals, entrepreneurs, non-profits, researchers, and mission-aligned institutions to build tax-savvy, data-smart, and future-ready solutions.</p>
-			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
-
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">What We Do:</h2>
-				<ul>
-					<li>Make tax compliance strategic, not stressful</li>
-					<li>Help you adopt digital systems, automation, and 4IR tools</li>
-					<li>Use data to uncover insights, risks, and opportunities</li>
-					<li>Guide NPOs and researchers to show evidence of impact</li>
-					<li>Train the next generation of digitally enabled professionals</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
-
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Who We Serve</h2>
-				<ul>
-					<li>Small and medium businesses needing tax compliance and automation</li>
-					<li>Academics and research institutions managing grant funding</li>
-					<li>NGOs and public benefit organisations tracking development impact</li>
-					<li>Independent tax practitioners embracing digital workflows</li>
-					<li>Professionals and changemakers building data-driven careers</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
-
-	<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
-		<div class="inner-hero text-container">
-			<div class="hero-text-container">
-				<h2 class="editable">Built at the intersection of tax, technology, and transformation.y</h2>
-				<p class="subtext editable">Your partner in digital tax strategy and evidence-based impact.</p>
-				<div class="cta button alt"><a href="#">Join Now</a></div>
-			</div>
-		</div>
-	</section>
+<section aria-labelledby="practices-h" style="background-color: #160F2B; background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px); background-size: 24px 24px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 48px; margin-bottom: 48px">
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Our practices</p>
+<h2 id="practices-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF">Three practices. One standard of quality.</h2>
 </div>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; color: #CFC6E3">Every engagement, whether a set of accounts, an impact report or a satellite assessment, is delivered to the same standard of rigour and evidence.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+<article style="background: #22193F; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Geist Mono', monospace; font-size: 14px; color: #F2B233">01</span><span aria-hidden="true" style="width: 44px; height: 6px; border-radius: 3px; background: #F2B233"></span></div>
+<h3 style="margin: 0; font-family: Geist, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF">Finance &amp; Tax</h3>
+<p style="margin: 0; color: #CFC6E3">We help businesses, trusts and public benefit organisations keep accurate financial records, meet their tax obligations and resolve matters with SARS.</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #E9E4F3"><li>Accounting and bookkeeping</li><li>Tax compliance, including returns, PAYE, VAT and customs</li><li>SARS disputes and Smart Tax Advisory</li></ul>
+<dl style="margin: auto 0 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 18px; display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; font-size: 14px">
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Lead</dt><dd style="margin: 0; color: #FFFFFF">Femidah Takalana</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Credentials</dt><dd style="margin: 0; color: #E9E4F3">Master Tax Practitioner (SA) · M.Com in SA and International Taxation · Registered Tax Practitioner · SAIT member</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Clients</dt><dd style="margin: 0; color: #E9E4F3">SMEs, trusts, public benefit organisations, tax practitioners</dd>
+</dl>
+<a href="practices.html" style="color: #F2B233; font-weight: 600; text-decoration: none">Explore Finance &amp; Tax →</a>
+</article>
+<article style="background: #22193F; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Geist Mono', monospace; font-size: 14px; color: #E8679E">02</span><span aria-hidden="true" style="width: 44px; height: 6px; border-radius: 3px; background: #A91B60"></span></div>
+<h3 style="margin: 0; font-family: Geist, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF">Data &amp; Impact</h3>
+<p style="margin: 0; color: #CFC6E3">We help funded organisations measure, evidence and report the impact of their work.</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #E9E4F3"><li>Monitoring and evaluation (M&amp;E) systems and impact frameworks</li><li>Grant management, Section 18A and PBO compliance</li><li>Dashboards, forecasting and data audits</li></ul>
+<dl style="margin: auto 0 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 18px; display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; font-size: 14px">
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Lead</dt><dd style="margin: 0; color: #FFFFFF">Dr Charles Takalana</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Credentials</dt><dd style="margin: 0; color: #E9E4F3">PhD in Astrophysics, University of the Witwatersrand</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Clients</dt><dd style="margin: 0; color: #E9E4F3">Non-profit organisations, research institutions, funders</dd>
+</dl>
+<a href="practices.html" style="color: #E8679E; font-weight: 600; text-decoration: none">Explore Data &amp; Impact →</a>
+</article>
+<article style="background: #22193F; border: 1px solid rgba(138,148,198,0.45); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Geist Mono', monospace; font-size: 14px; color: #8A94C6">03</span><span aria-hidden="true" style="width: 44px; height: 6px; border-radius: 3px; background: #8A94C6"></span></div>
+<h3 style="margin: 0; font-family: Geist, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF">Space &amp; Earth Observation</h3>
+<p style="margin: 0; color: #CFC6E3">We apply satellite data and space-sector expertise to environmental risk, disclosure and programme design.</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #E9E4F3"><li>EagleNatureInsight™ nature-related risk assessment</li><li>Earth observation and geospatial analytics</li><li>Space-sector advisory: programme design, funding and M&amp;E</li></ul>
+<dl style="margin: auto 0 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 18px; display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; font-size: 14px">
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Lead</dt><dd style="margin: 0; color: #FFFFFF">Dr Charles Takalana</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Credentials</dt><dd style="margin: 0; color: #E9E4F3">PhD in Astrophysics, University of the Witwatersrand · EagleNatureInsight™, used by Space Eagle under licence from CFMADCON, won the 2026 Nature Intelligence for Business Grand Challenge</dd>
+<dt style="font-family: 'Geist Mono', monospace; color: #9C90BA">Clients</dt><dd style="margin: 0; color: #E9E4F3">Companies preparing nature-related disclosures, their financiers and supply chains, space programmes</dd>
+</dl>
+<a href="practices.html" style="color: #8A94C6; font-weight: 600; text-decoration: none">Explore Space &amp; Earth Observation →</a>
+</article>
+</div>
+</div>
+</section>
+
+<section id="eni" style="background: #181B2E; position: relative; overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">A CFMADCON solution</p>
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF; font-size: 50px">EagleNatureInsight™</h2>
+<p style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.01em; color: #B8C0E6">Nature intelligence for business.</p>
+<p style="margin: 24px 0 0; font-size: 18px; color: #CDD1E6; max-width: 600px">Financiers, buyers and investors increasingly expect companies to understand their dependencies and impacts on nature. EagleNatureInsight uses satellite data to assess each of your sites and produce a prioritised action plan aligned with the TNFD LEAP approach. It is designed for small and medium-sized enterprises.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 36px">
+<a href="eaglenatureinsight.html" style="background: #8A94C6; color: #181B2E; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Explore EagleNatureInsight™</a>
+<a href="https://natureinsight.spaceeagle.space/" style="color: #FFFFFF; text-decoration: none; padding: 14px 25px; border-radius: 999px; font-weight: 600; font-size: 16px; border: 1px solid rgba(255,255,255,0.35); border-color: rgba(184,192,230,0.5)">Open the dashboard ↗</a>
+</div>
+<p style="margin: 18px 0 0; font-size: 14px; color: #A3A9C8">Delivered with Space Eagle · Winner, 2026 Nature Intelligence for Business Grand Challenge</p>
+</div>
+<div style="flex: 1 1 400px; min-width: 0"><figure style="margin: 0">
+<div style="position: relative; border-radius: 18px; overflow: hidden; border: 1px solid rgba(184,192,230,0.3); aspect-ratio: 3 / 2; background: #121524">
+<img src="assets/eo-burn-scars.jpg" alt="Sentinel-2 satellite image of the South African coast, with burn scars highlighted in red and yellow" style="width: 100%; height: 100%; object-fit: cover; object-position: 22% 50%; display: block">
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 36%; height: 2px; background: #8A94C6; opacity: 0.85; box-shadow: 0 0 18px 4px rgba(138,148,198,0.35)"></div>
+<p style="position: absolute; left: 16px; bottom: 16px; margin: 0; background: rgba(14,31,51,0.88); border-radius: 10px; padding: 10px 14px; font-family: 'Geist Mono', monospace; font-size: 13px; color: #FFFFFF">SENTINEL-2 · BURN-SCAR CHANGE DETECTION</p>
+</div>
+<figcaption style="margin: 12px 0 0; font-size: 13px; line-height: 1.5; color: #A3A9C8">South African coast. Contains modified Copernicus Sentinel data, processed by Sentinel Hub.</figcaption>
+</figure></div>
+</div>
+</section>
+
+<section id="story" style="background: #F6F3FA; color: #2C1E4A">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
+<div style="flex: 1 1 460px; min-width: 0">
+<p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #A91B60">Our story</p>
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #160F2B">Founded where finance meets science.</h2>
+<p style="margin: 24px 0 0; font-size: 18px; color: #4A3F66">CFMADCON was founded by a tax specialist and an astrophysicist. One brought the structure and rigour of financial practice; the other, the systems thinking and data skills of science. That combination still defines how we work.</p>
+<a href="our-story.html" style="display: inline-block; margin-top: 28px; background: #2C1E4A; color: #FFFFFF; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Read our story</a>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">2022</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">Founded in Cape Town</p></div>
+<div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">2026</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">EagleNatureInsight™ wins a global challenge, through Space Eagle</p></div>
+<div style="background: #FFFFFF; border: 1px solid #E4DCF0; border-radius: 16px; padding: 22px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A91B60">Today</p><p style="margin: 6px 0 0; font-weight: 600; color: #160F2B">Three practices, one standard</p></div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="q-h" style="background: #160F2B">
+<div style="max-width: 1000px; margin: 0 auto; padding: 104px 32px">
+<p style="margin: 0 0 14px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A94C6">Common questions</p>
+<h2 id="q-h" style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF; margin-bottom: 32px">What clients ask us first</h2>
+<div style="border-top: 1px solid rgba(255,255,255,0.12)">
+<details style="border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 0"><summary style="display: flex; justify-content: space-between; gap: 24px; font-family: Geist, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">What is EagleNatureInsight™?<span class="faq-plus" aria-hidden="true" style="color: #E8679E; transition: transform 0.2s">+</span></summary><p style="margin: 12px 0 0; color: #CFC6E3">A CFMADCON platform that uses satellite and environmental data to assess how each of a company's sites depends on and affects nature. Each assessment produces a plain-language profile and a prioritised action plan aligned with the TNFD LEAP approach.</p></details>
+<details style="border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 0"><summary style="display: flex; justify-content: space-between; gap: 24px; font-family: Geist, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Do you work on space projects beyond Earth observation?<span class="faq-plus" aria-hidden="true" style="color: #E8679E; transition: transform 0.2s">+</span></summary><p style="margin: 12px 0 0; color: #CFC6E3">Yes. Our space-sector advisory covers programme design, funding strategy and monitoring and evaluation for space programmes.</p></details>
+<details style="border-bottom: 1px solid rgba(255,255,255,0.12); padding: 20px 0"><summary style="display: flex; justify-content: space-between; gap: 24px; font-family: Geist, sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF">Can one engagement draw on more than one practice?<span class="faq-plus" aria-hidden="true" style="color: #E8679E; transition: transform 0.2s">+</span></summary><p style="margin: 12px 0 0; color: #CFC6E3">Yes. Our multidisciplinary model means a single engagement can combine financial, data and Earth observation expertise, for example a funder report that brings together financial records, impact data and site-level environmental evidence.</p></details>
+</div>
+<a href="faq.html" style="display: inline-block; margin-top: 28px; color: #E8679E; font-weight: 600; text-decoration: none">See all questions →</a>
+</div>
+</section>
+
+<section aria-label="Contact us" style="background-color: #160F2B; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 64px 64px; border-top: 1px solid rgba(255,255,255,0.08)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 32px; display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<h2 style="margin: 0; font-family: Geist, sans-serif; font-weight: 600; font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; color: #FFFFFF">Speak to our team.</h2>
+<p style="margin: 16px 0 0; color: #CFC6E3; max-width: 560px">To discuss an engagement or request a proposal, contact us.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+<a href="contact.html" style="background: #A91B60; color: #FFFFFF; text-decoration: none; padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 16px">Request a consultation</a>
+<a href="tel:+27645315077" style="color: #FFFFFF; text-decoration: none; padding: 14px 25px; border-radius: 999px; font-weight: 600; font-size: 16px; border: 1px solid rgba(255,255,255,0.35)">+27 (0) 64 531 5077</a>
+</div>
+</div>
+</section>
+
+<footer style="background: #100A21; color: #9C90BA; font-size: 15px">
+<div aria-hidden="true" style="line-height: 0; background: #160F2B"><svg width="100%" height="6" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-dots-night)"></rect></svg><svg width="100%" height="16.12" style="display: block" aria-hidden="true"><rect x="0" y="0.00" width="100%" height="1.24" fill="#160F2B"></rect><rect x="0" y="1.24" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="1.86" width="100%" height="1.86" fill="#F2B233"></rect><rect x="0" y="3.72" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="4.34" width="100%" height="1.24" fill="#8A94C6"></rect><rect x="0" y="5.58" width="100%" height="0.62" fill="#160F2B"></rect><rect x="0" y="6.20" width="100%" height="1.86" fill="#A91B60"></rect><rect x="0" y="8.06" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="8.68" width="100%" height="1.24" fill="#4C5270"></rect><rect x="0" y="9.92" width="100%" height="1.24" fill="#F2B233"></rect><rect x="0" y="11.16" width="100%" height="0.62" fill="#160F2B"></rect><rect x="0" y="11.78" width="100%" height="1.24" fill="#8A94C6"></rect><rect x="0" y="13.02" width="100%" height="0.62" fill="#F6F3FA"></rect><rect x="0" y="13.64" width="100%" height="1.24" fill="#E8679E"></rect><rect x="0" y="14.88" width="100%" height="1.24" fill="#160F2B"></rect></svg><svg width="100%" height="4" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="#A91B60"></rect></svg><svg width="100%" height="8" style="display: block" aria-hidden="true"><rect width="100%" height="100%" fill="url(#cfm-ladder)"></rect><rect y="7" width="100%" height="1" fill="#160F2B"></rect></svg></div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<a href="./" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF" aria-label="CFMADCON home"><img src="assets/cfmadcon-mark.png" alt="" style="width: 40px; height: 40px; display: block"><span style="font-weight: 600; font-size: 18px; letter-spacing: 0.16em">CFMADCON</span></a>
+<p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #E8679E">FINANCIAL · SCIENTIFIC · TECHNOLOGY ADVISORY</p>
+<p style="margin: 0">Kraaifontein, Cape Town 7570</p>
+</div>
+<nav aria-label="Practices" style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #FFFFFF">PRACTICES</p>
+<a href="practices.html" style="color: #CFC6E3; text-decoration: none">Finance &amp; Tax</a>
+<a href="practices.html" style="color: #CFC6E3; text-decoration: none">Data &amp; Impact</a>
+<a href="practices.html" style="color: #CFC6E3; text-decoration: none">Space &amp; Earth Observation</a>
+<a href="eaglenatureinsight.html" style="color: #CFC6E3; text-decoration: none">EagleNatureInsight™</a>
+<a href="https://natureinsight.spaceeagle.space/" style="color: #B8C0E6; text-decoration: none">EagleNatureInsight™ dashboard ↗</a>
+</nav>
+<nav aria-label="Firm" style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #FFFFFF">FIRM</p>
+<a href="our-story.html" style="color: #CFC6E3; text-decoration: none">Our story</a>
+<a href="faq.html" style="color: #CFC6E3; text-decoration: none">FAQ</a>
+<a href="contact.html" style="color: #CFC6E3; text-decoration: none">Contact</a>
+<a href="mailto:admin@cfmadcon.com" style="color: #CFC6E3; text-decoration: none">admin@cfmadcon.com</a>
+</nav>
+<nav aria-label="Social" style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #FFFFFF">FOLLOW</p>
+<a href="https://www.linkedin.com/company/cfm-advisory-and-consulting/about/" style="color: #CFC6E3; text-decoration: none">LinkedIn</a>
+<a href="https://x.com/cfmadcon" style="color: #CFC6E3; text-decoration: none">X</a>
+<a href="https://www.instagram.com/cfmadcon/" style="color: #CFC6E3; text-decoration: none">Instagram</a>
+<a href="https://www.facebook.com/people/CFM-Advisory-and-Consulting/100091749138036/" style="color: #CFC6E3; text-decoration: none">Facebook</a>
+</nav>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 20px 32px 36px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px; font-size: 13px">
+<p style="margin: 0">© 2026 CFMADCON (Pty) Ltd, Reg. 2022/310430/07. EagleNatureInsight™ is a CFMADCON solution, delivered with Space Eagle.</p>
+<p style="margin: 0">Imagery: NASA Blue Marble. Contains modified Copernicus Sentinel data, processed by Sentinel Hub.</p>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
